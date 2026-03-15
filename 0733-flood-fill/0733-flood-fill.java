@@ -3,9 +3,11 @@ class Solution {
         if(i<0 || j<0 || i>=image.length || j>=image[0].length) return;
 
         if(image[i][j]!=temp) return;
+
+        if(image[i][j]==color) return;
         
         image[i][j] = color;
-        
+
         dfs(image,i-1,j,temp,color);
         dfs(image,i+1,j,temp,color);
         dfs(image,i,j-1,temp,color);
