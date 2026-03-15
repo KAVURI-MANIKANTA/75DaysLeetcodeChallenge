@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0713-subarray-product-less-than-k) |
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
 ## Hash Table
 |  |
 | ------- |
@@ -19,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0242-valid-anagram) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
 ## Sorting
 |  |
 | ------- |
@@ -39,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0713-subarray-product-less-than-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0713-subarray-product-less-than-k) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
 ## String
 |  |
 | ------- |
