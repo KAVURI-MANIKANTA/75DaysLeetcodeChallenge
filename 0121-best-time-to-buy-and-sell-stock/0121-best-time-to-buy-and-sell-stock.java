@@ -8,7 +8,9 @@ class Solution {
             }
             else{
                 int currentProfit = prices[i]-buyPrice;
-                maxProfit = (int) Math.max(maxProfit,currentProfit);
+                if(currentProfit>maxProfit){
+                    maxProfit = currentProfit;
+                }
             }
         }
         return maxProfit;
