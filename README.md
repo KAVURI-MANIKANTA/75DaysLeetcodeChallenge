@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0172-factorial-trailing-zeroes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0172-factorial-trailing-zeroes) |
+| [1523-count-odd-numbers-in-an-interval-range](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 ## Divide and Conquer
 |  |
