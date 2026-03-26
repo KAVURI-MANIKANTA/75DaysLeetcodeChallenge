@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
+| [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 ## Hash Table
 |  |
 | ------- |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0172-factorial-trailing-zeroes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0172-factorial-trailing-zeroes) |
+| [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 ## Divide and Conquer
 |  |
 | ------- |
