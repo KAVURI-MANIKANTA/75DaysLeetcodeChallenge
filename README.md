@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0283-move-zeroes) |
+| [0287-find-the-duplicate-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0287-find-the-duplicate-number) |
 | [0347-top-k-frequent-elements](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0347-top-k-frequent-elements) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0643-maximum-average-subarray-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0643-maximum-average-subarray-i) |
@@ -51,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0287-find-the-duplicate-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0287-find-the-duplicate-number) |
 | [0713-subarray-product-less-than-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0713-subarray-product-less-than-k) |
 ## Prefix Sum
 |  |
@@ -116,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0283-move-zeroes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0283-move-zeroes) |
+| [0287-find-the-duplicate-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0287-find-the-duplicate-number) |
 ## Graph Theory
 |  |
 | ------- |
@@ -134,4 +137,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0121-best-time-to-buy-and-sell-stock) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
