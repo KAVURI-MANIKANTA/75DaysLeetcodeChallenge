@@ -6,13 +6,14 @@ class Solution {
         int n = s.length();
         int maxl = 0;
         while(r<n){
-            if(hm.containsKey(s.charAt(r))){
-                if(l<=hm.get(s.charAt(r))){
-                    l = hm.get(s.charAt(r))+1;
+            char ch = s.charAt(r);
+            if(hm.containsKey(ch)){
+                if(l<=hm.get(ch)){
+                    l = hm.get(ch)+1;
                 }
             }
-            hm.put(s.charAt(r),r);
-            maxl = Math.max(maxl,r-hm.get(s.charAt(l))+1);
+            hm.put(ch,r);
+            maxl = Math.max(maxl,r-l+1);
             r++;
         }
         return maxl;
