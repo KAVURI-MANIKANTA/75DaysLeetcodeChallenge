@@ -7,10 +7,11 @@ class Solution {
         }
         int tl = t.length();
         for(int i=0; i<tl; i++){
-            if(freq[t.charAt(i)-'a']==0){
-                return t.charAt(i);
+            char ch = t.charAt(i);
+            if(freq[ch-'a']==0){
+                return ch;
             }
-            freq[t.charAt(i)-'a']--;
+            freq[ch-'a']--;
         }
         return ' ';
     }
