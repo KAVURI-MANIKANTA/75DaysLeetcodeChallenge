@@ -1,12 +1,17 @@
 class Solution {
     public char findTheDifference(String s, String t) {
-        int result = 0;
-        for(char ch:s.toCharArray()){
-            result = result^ch;
+        int[] freq = new int[26];
+        int sl = s.length();
+        for(int i=0; i<sl; i++){
+            freq[s.charAt(i)-'a']++;
         }
-        for(char ch:t.toCharArray()){
-            result = result^ch;
+        int tl = t.length();
+        for(int i=0; i<tl; i++){
+            if(freq[t.charAt(i)-'a']==0){
+                return t.charAt(i);
+            }
+            freq[t.charAt(i)-'a']--;
         }
-        return (char)result;
+        return ' ';
     }
 }
