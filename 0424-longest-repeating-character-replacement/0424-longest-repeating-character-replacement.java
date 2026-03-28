@@ -8,7 +8,7 @@ class Solution {
             char ch = s.charAt(r);
             hm.put(ch,hm.getOrDefault(ch,0)+1);
             maxFreq = Math.max(maxFreq,hm.get(ch));
-            while((r-l+1)-maxFreq>k){
+            if((r-l+1)-maxFreq>k){
                 hm.put(s.charAt(l),hm.get(s.charAt(l))-1);
                 l++;
             }
