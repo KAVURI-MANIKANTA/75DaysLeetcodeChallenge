@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
+| [1046-last-stone-weight](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1046-last-stone-weight) |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1502-can-make-arithmetic-progression-from-sequence) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 ## Hash Table
@@ -111,6 +112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0347-top-k-frequent-elements) |
+| [1046-last-stone-weight](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1046-last-stone-weight) |
 ## Bucket Sort
 |  |
 | ------- |
