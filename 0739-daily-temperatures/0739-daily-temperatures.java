@@ -1,6 +1,6 @@
 class Solution {
     public int[] dailyTemperatures(int[] temperatures) {
-        Stack<Integer> st = new Stack<>();
+        ArrayDeque<Integer> st = new ArrayDeque<>();
         int n = temperatures.length;
         int[] res = new int[n];
         for(int i=n-1; i>=0; i--){
