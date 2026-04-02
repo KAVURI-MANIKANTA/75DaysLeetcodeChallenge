@@ -11,8 +11,10 @@ class Solution {
             st.push(i);
         }
         return res;
+    }
+}
 
-        /*
+/*
         int n = temperatures.length;
         int[] res = new int[n];
         for(int i=0; i<n; i++){
@@ -25,5 +27,3 @@ class Solution {
         }
         return res;
         */
-    }
-}
