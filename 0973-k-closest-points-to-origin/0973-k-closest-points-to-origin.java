@@ -4,7 +4,9 @@ class Solution {
         PriorityQueue<Pair> pq = new PriorityQueue<>((a,b)->(a.dis-b.dis));
         for(int i=0; i<n; i++){
             int[] point = points[i];
-            int dis = point[0]*point[0]+point[1]*point[1];
+            int x = point[0];
+            int y = point[1];
+            int dis = x*x+y*y;
             pq.add(new Pair(dis,i));
         }
         int[][] res = new int[k][2];
