@@ -1,4 +1,4 @@
-//tc:O(logn)
+//tc:O(logn) sc:O(1)
 class Solution {
     public int findMin(int[] nums) {
         int l=0;
@@ -16,7 +16,7 @@ class Solution {
 
 
 
-/* tc:O(n)
+/* tc:O(n) sc:O(1)
 class Solution {
     public int findMin(int[] nums) {
         if(nums[0]<=nums[nums.length-1]) return nums[0];
@@ -29,7 +29,7 @@ class Solution {
 }
 */
 
-/* tc:O(nlogn)
+/* tc:O(nlogn) sc:O(logn) sorting uses recursion internally
 class Solution {
     public int findMin(int[] nums) {
         if(nums[0]<=nums[nums.length-1]) return nums[0];
