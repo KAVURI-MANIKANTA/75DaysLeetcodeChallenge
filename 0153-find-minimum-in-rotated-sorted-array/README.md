@@ -46,3 +46,132 @@
 	<li>All the integers of <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted and rotated between <code>1</code> and <code>n</code> times.</li>
 </ul>
+
+<p>
+	TIME AND SPACE COMPLEXITIES OF 3 DIFFERENT APPROACHES
+
+## ✅ 1. Binary Search Solution
+
+```java
+// tc: O(log n)
+```
+
+✔ **Correct**
+
+### Why?
+
+* Each iteration cuts the search space into half
+* Like: `n → n/2 → n/4 → ... → 1`
+
+👉 Number of steps:
+[
+\log_2 n
+]
+
+✔ So:
+
+* **Time Complexity:** `O(log n)`
+* **Space Complexity:** `O(1)` (no extra space)
+
+---
+
+## ✅ 2. Linear Scan Solution
+
+```java
+// tc: O(n)
+```
+
+✔ **Correct**
+
+### Why?
+
+* You check every element once
+
+👉 Worst case:
+
+```text
+[5,6,7,1,2,3,4]
+```
+
+You may scan all elements
+
+✔ So:
+
+* **Time Complexity:** `O(n)`
+* **Space Complexity:** `O(1)`
+
+---
+
+## ✅ 3. Sorting Solution
+
+```java
+// tc: O(n log n)
+```
+
+✔ **Correct**
+
+### Why?
+
+* `Arrays.sort()` uses Dual-Pivot QuickSort (for primitives)
+
+👉 Sorting takes:
+[
+O(n \log n)
+]
+
+Then:
+
+* Accessing first element → `O(1)`
+
+✔ So:
+
+* **Time Complexity:** `O(n log n)`
+* **Space Complexity:** `O(log n)` (due to recursion stack)
+
+---
+
+## 🔥 Interview Insight (IMPORTANT)
+
+If interviewer asks:
+
+👉 **“Which is best and why?”**
+
+You should say:
+
+* Binary Search (`O(log n)`) ✅ best
+* Because:
+
+  * Problem guarantees **sorted + rotated**
+  * So we can optimize beyond linear scan
+
+---
+This line:
+
+```java
+if(nums[l] <= nums[r]) return nums[l];
+```
+
+👉 Good optimization
+👉 Handles already sorted case in **O(1)**
+
+---
+
+## 🧠 Final Summary
+
+| Approach      | Time Complexity | Best?  |
+| ------------- | --------------- | ------ |
+| Binary Search | `O(log n)`      | ✅ Best |
+| Linear Scan   | `O(n)`          | ❌      |
+| Sorting       | `O(n log n)`    | ❌      |
+
+
+🟢 Final Clear Answer
+
+| Code               | Space Complexity | Why                           |
+| ------------------ | ---------------- | ----------------------------- |
+| Your Binary Search | `O(1)` ✅         | No recursion, no extra memory |
+| Linear Scan        | `O(1)` ✅         | Just a variable               |
+| `Arrays.sort()`    | `O(log n)` ⚠️    | Uses recursion internally     |
+
+
+</p>
