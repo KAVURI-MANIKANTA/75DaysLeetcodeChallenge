@@ -1,13 +1,4 @@
-class Solution {
-    public int findMin(int[] nums) {
-        int min = Integer.MAX_VALUE;
-        for(int i=0; i<nums.length; i++){
-            if(nums[i]<min) min = nums[i];
-        }
-        return min;
-    }
-}
-/*
+//tc:O(logn)
 class Solution {
     public int findMin(int[] nums) {
         int l=0;
@@ -22,11 +13,26 @@ class Solution {
         return nums[l];
     }
 }
-*/
 
-/*
+
+
+/* tc:O(n)
 class Solution {
     public int findMin(int[] nums) {
+        if(nums[0]<=nums[nums.length-1]) return nums[0];
+        int min = Integer.MAX_VALUE;
+        for(int i=0; i<nums.length; i++){
+            if(nums[i]<min) min = nums[i];
+        }
+        return min;
+    }
+}
+*/
+
+/* tc:O(nlogn)
+class Solution {
+    public int findMin(int[] nums) {
+        if(nums[0]<=nums[nums.length-1]) return nums[0];
         Arrays.sort(nums);
         return nums[0];
     }
