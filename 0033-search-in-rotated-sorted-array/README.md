@@ -27,3 +27,73 @@
 	<li><code>nums</code> is an ascending array that is possibly rotated.</li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+<p>
+🔹 Problem Idea (Simple)
+You are given a sorted array rotated at some pivot.
+Example:
+[4,5,6,7,0,1,2]
+👉 Originally sorted → [0,1,2,4,5,6,7]
+👉 Rotated → [4,5,6,7,0,1,2]
+
+You must find target index in O(log n).
+🧠 Core Logic (Most Important)
+At every step:
+
+One half is always sorted
+Check:
+If target lies in sorted half → go there
+Else → go to other half
+🔍 Step-by-Step Example
+Input:
+nums = [4,5,6,7,0,1,2], target = 0
+Iteration 1:
+mid = 7 → left sorted
+target not in [4..7]
+→ go right
+Iteration 2:
+mid = 1 → right sorted
+target in [0..2]
+→ go right
+Found index = 4 ✅
+⏱️ Time & Space Complexity
+🔹 Binary Search Approach
+Time Complexity: O(log n)
+Space Complexity: O(1)
+
+👉 Best possible solution ✔️
+🔹 Brute Force (Your second code)
+for(int i=0; i<=n; i++){
+    if(nums[i]==target) return i;
+}
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+👉 Works but NOT efficient ❌
+
+🔥 Why Binary Search Works Here?
+Because:
+Even though rotated → still partially sorted
+One half is always sorted → we exploit that
+💡 Other Ways to Solve
+1️⃣ Find Pivot + Binary Search
+Steps:
+Find rotation index (smallest element)
+Apply binary search in correct half
+👉 Time: O(log n)
+👉 Slightly more complex
+
+2️⃣ Modified Binary Search (Your approach) ✅ BEST
+👉 No need to find pivot separately
+👉 Clean + fast + interview favorite
+
+🏆 Final Verdict
+| Approach    | Time     | Space | Difficulty | Recommended |
+| ----------- | -------- | ----- | ---------- | ----------- |
+| Brute Force | O(n)     | O(1)  | Easy       | ❌ No       |
+| Pivot + BS  | O(log n) | O(1)  | Medium     | 👍          |
+| Modified BS | O(log n) | O(1)  | Medium     | ⭐ BEST     |
+
+
+🚀 Key Interview Tip
+👉 Always remember this line:
+“At least one half of rotated sorted array is always sorted”</p>
