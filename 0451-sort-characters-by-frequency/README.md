@@ -128,7 +128,7 @@ class Solution {
     public String frequencySort(String s) {
         HashMap<Character,Integer> hm = new HashMap<>();
 
-```
+
     for(char ch:s.toCharArray()){
         hm.put(ch,hm.getOrDefault(ch,0)+1);
     }
@@ -164,10 +164,8 @@ class Pair{
         this.v=v;
     }
 }
-```
-
 }
-
+````
 # 🚀 Approach 3: Heap Without Pair (Cleaner)<br>
 <br>
 ## 💡 Idea<br>
@@ -217,6 +215,7 @@ class Solution {
         return sb.toString();
     }
 }
+````
 # 🧠 Final Comparison<br>
 <br>
 Bucket Sort → O(n) ✅ fastest<br>
