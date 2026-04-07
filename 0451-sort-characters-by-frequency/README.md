@@ -66,7 +66,8 @@ Space Complexity: O(n)<br>
 <br>
 ## ✅ Code<br>
 <br>
-```java
+```
+java
 class Solution {
     public String frequencySort(String s) {
         HashMap<Character,Integer> hm = new HashMap<>();
@@ -101,7 +102,7 @@ class Solution {
         return sb.toString();
     }
 }
-````
+```
 
 # 🚀 Approach 2: Heap + Pair Class<br>
 <br>
@@ -123,7 +124,8 @@ Space Complexity: O(n)<br>
 <br>
 ## ✅ Code<br>
 <br>
-```java
+```
+java
 class Solution {
     public String frequencySort(String s) {
         HashMap<Character,Integer> hm = new HashMap<>();
@@ -165,7 +167,7 @@ class Pair{
     }
 }
 }
-````
+```
 # 🚀 Approach 3: Heap Without Pair (Cleaner)<br>
 <br>
 ## 💡 Idea<br>
@@ -186,7 +188,8 @@ Space Complexity: O(n)<br>
 <br>
 ## ✅ Code<br>
 <br>
-```java
+```
+java
 class Solution {
     public String frequencySort(String s) {
         HashMap<Character,Integer> hm = new HashMap<>();
@@ -215,7 +218,7 @@ class Solution {
         return sb.toString();
     }
 }
-````
+```
 # 🧠 Final Comparison<br>
 <br>
 Bucket Sort → O(n) ✅ fastest<br>
