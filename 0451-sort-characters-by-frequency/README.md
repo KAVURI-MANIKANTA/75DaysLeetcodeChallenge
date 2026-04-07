@@ -37,17 +37,14 @@ Note that &#39;A&#39; and &#39;a&#39; are treated as two different characters.
 	<li><code>1 &lt;= s.length &lt;= 5 * 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of uppercase and lowercase English letters and digits.</li>
 </ul>
+
 <p>
-
-
 # 🔥 LeetCode 451 – Sort Characters By Frequency<br>
 <br>
 ## 🧠 Problem Statement<br>
 <br>
 Given a string `s`, sort it in decreasing order based on the frequency of characters.<br>
-<br>
----<br>
-<br>
+
 # 🚀 Approach 1: Bucket Sort (Optimal – O(n))<br>
 <br>
 ## 💡 Idea<br>
@@ -106,9 +103,6 @@ class Solution {
 }
 ````
 
-<br>
----<br>
-<br>
 # 🚀 Approach 2: Heap + Pair Class<br>
 <br>
 ## 💡 Idea<br>
@@ -174,10 +168,6 @@ class Pair{
 
 }
 
-````
-<br>
----<br>
-<br>
 # 🚀 Approach 3: Heap Without Pair (Cleaner)<br>
 <br>
 ## 💡 Idea<br>
@@ -227,19 +217,11 @@ class Solution {
         return sb.toString();
     }
 }
-````
-
-<br>
----<br>
-<br>
 # 🧠 Final Comparison<br>
 <br>
 Bucket Sort → O(n) ✅ fastest<br>
 Heap + Pair → O(n log k)<br>
 Heap (no Pair) → O(n log k) but cleaner<br>
-<br>
----<br>
-<br>
 # 💯 Interview Tip<br>
 <br>
 If asked:<br>
@@ -247,9 +229,6 @@ If asked:<br>
 <br>
 Answer:<br>
 👉 “Yes, using Bucket Sort we can reduce time complexity from O(n log k) to O(n)”<br>
-<br>
----<br>
-<br>
 # 🚀 Conclusion<br>
 <br>
 Use Bucket Sort when frequency matters.<br>
