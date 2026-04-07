@@ -28,72 +28,72 @@
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
 <p>
-🔹 Problem Idea (Simple)
-You are given a sorted array rotated at some pivot.
-Example:
-[4,5,6,7,0,1,2]
-👉 Originally sorted → [0,1,2,4,5,6,7]
-👉 Rotated → [4,5,6,7,0,1,2]
+	<br>
+🔹 Problem Idea (Simple)<br>
+You are given a sorted array rotated at some pivot.<br>
+Example:<br>
+[4,5,6,7,0,1,2]<br>
+👉 Originally sorted → [0,1,2,4,5,6,7]<br>
+👉 Rotated → [4,5,6,7,0,1,2]<br>
 
-You must find target index in O(log n).
-🧠 Core Logic (Most Important)
-At every step:
+You must find target index in O(log n).<br>
+🧠 Core Logic (Most Important)<br>
+At every step:<br>
+One half is always sorted<br>
+Check:<br>
+If target lies in sorted half → go there<br>
+Else → go to other half<br>
+🔍 Step-by-Step Example<br>
+Input:<br>
+nums = [4,5,6,7,0,1,2], target = 0<br>
+Iteration 1:<br>
+mid = 7 → left sorted<br>
+target not in [4..7]<br>
+→ go right<br>
+Iteration 2:<br>
+mid = 1 → right sorted<br>
+target in [0..2]<br>
+→ go right<br>
+Found index = 4 ✅<br>
+⏱️ Time & Space Complexity<br>
+🔹 Binary Search Approach<br>
+Time Complexity: O(log n)<br>
+Space Complexity: O(1)<br>
 
-One half is always sorted
-Check:
-If target lies in sorted half → go there
-Else → go to other half
-🔍 Step-by-Step Example
-Input:
-nums = [4,5,6,7,0,1,2], target = 0
-Iteration 1:
-mid = 7 → left sorted
-target not in [4..7]
-→ go right
-Iteration 2:
-mid = 1 → right sorted
-target in [0..2]
-→ go right
-Found index = 4 ✅
-⏱️ Time & Space Complexity
-🔹 Binary Search Approach
-Time Complexity: O(log n)
-Space Complexity: O(1)
+👉 Best possible solution ✔️<br>
+🔹 Brute Force (Your second code)<br>
+for(int i=0; i<=n; i++){<br>
+    if(nums[i]==target) return i;<br>
+}<br>
+Time Complexity: O(n)<br>
+Space Complexity: O(1)<br>
 
-👉 Best possible solution ✔️
-🔹 Brute Force (Your second code)
-for(int i=0; i<=n; i++){
-    if(nums[i]==target) return i;
-}
-Time Complexity: O(n)
-Space Complexity: O(1)
+👉 Works but NOT efficient ❌<br>
 
-👉 Works but NOT efficient ❌
+🔥 Why Binary Search Works Here?<br>
+Because:<br>
+Even though rotated → still partially sorted<br>
+One half is always sorted → we exploit that<br>
+💡 Other Ways to Solve<br>
+1️⃣ Find Pivot + Binary Search<br>
+Steps:<br>
+Find rotation index (smallest element)<br>
+Apply binary search in correct half<br>
+👉 Time: O(log n)<br>
+👉 Slightly more complex<br>
 
-🔥 Why Binary Search Works Here?
-Because:
-Even though rotated → still partially sorted
-One half is always sorted → we exploit that
-💡 Other Ways to Solve
-1️⃣ Find Pivot + Binary Search
-Steps:
-Find rotation index (smallest element)
-Apply binary search in correct half
-👉 Time: O(log n)
-👉 Slightly more complex
+2️⃣ Modified Binary Search (Your approach) ✅ BEST<br>
+👉 No need to find pivot separately<br>
+👉 Clean + fast + interview favorite<br>
 
-2️⃣ Modified Binary Search (Your approach) ✅ BEST
-👉 No need to find pivot separately
-👉 Clean + fast + interview favorite
-
-🏆 Final Verdict
-| Approach    | Time     | Space | Difficulty | Recommended |
-| ----------- | -------- | ----- | ---------- | ----------- |
-| Brute Force | O(n)     | O(1)  | Easy       | ❌ No       |
-| Pivot + BS  | O(log n) | O(1)  | Medium     | 👍          |
-| Modified BS | O(log n) | O(1)  | Medium     | ⭐ BEST     |
+🏆 Final Verdict<br>
+| Approach    | Time     | Space | Difficulty | Recommended |<br>
+| ----------- | -------- | ----- | ---------- | ----------- |<br>
+| Brute Force | O(n)     | O(1)  | Easy       | ❌ No       |<br>
+| Pivot + BS  | O(log n) | O(1)  | Medium     | 👍          |<br>
+| Modified BS | O(log n) | O(1)  | Medium     | ⭐ BEST     |<br>
 
 
-🚀 Key Interview Tip
-👉 Always remember this line:
-“At least one half of rotated sorted array is always sorted”</p>
+🚀 Key Interview Tip<br>
+👉 Always remember this line:<br>
+“At least one half of rotated sorted array is always sorted”</p><br>
