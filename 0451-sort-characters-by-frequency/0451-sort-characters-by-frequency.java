@@ -4,15 +4,24 @@ class Solution {
         for(char ch:s.toCharArray()){
             hm.put(ch,hm.getOrDefault(ch,0)+1);
         }
-        PriorityQueue<Character> pq = new PriorityQueue<>((a,b)->(hm.get(b)-hm.get(a)));
-        pq.addAll(hm.keySet());
+        List<Character>[] bucket = new ArrayList[s.length()+1];
+        for(char ch:hm.keySet()){
+            int freq = hm.get(ch);
+            if(bucket[freq]==null){
+                bucket[freq]=new ArrayList<>();
+            }
+            bucket[freq].add(ch);
+        }
         StringBuilder sb = new StringBuilder();
-        while(!pq.isEmpty()){
-            char ch = pq.poll();
-            int l = hm.get(ch);
-            while(l>0){
-                sb.append(ch);
-                l--;
+        for(int i=bucket.length-1; i>=0; i--){
+            if(bucket[i]!=null){
+                for(char ch:bucket[i]){
+                    int freq = i;
+                    while(freq>0){
+                        sb.append(ch);
+                        freq--;
+                    }
+                }
             }
         }
         return sb.toString();
@@ -50,6 +59,29 @@ class Solution {
             this.ch=ch;
             this.v=v;
         }
+    }
+}
+*/
+
+/*
+class Solution {
+    public String frequencySort(String s) {
+        HashMap<Character,Integer> hm = new HashMap<>();
+        for(char ch:s.toCharArray()){
+            hm.put(ch,hm.getOrDefault(ch,0)+1);
+        }
+        PriorityQueue<Character> pq = new PriorityQueue<>((a,b)->(hm.get(b)-hm.get(a)));
+        pq.addAll(hm.keySet());
+        StringBuilder sb = new StringBuilder();
+        while(!pq.isEmpty()){
+            char ch = pq.poll();
+            int l = hm.get(ch);
+            while(l>0){
+                sb.append(ch);
+                l--;
+            }
+        }
+        return sb.toString();
     }
 }
 */
