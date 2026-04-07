@@ -12,19 +12,19 @@ class Solution {
             }
             bucket[freq].add(ch);
         }
-        StringBuilder sb = new StringBuilder();
+        StringBuilder sbr = new StringBuilder();
         for(int i=bucket.length-1; i>=0; i--){
             if(bucket[i]!=null){
                 for(char ch:bucket[i]){
                     int freq = i;
                     while(freq>0){
-                        sb.append(ch);
+                        sbr.append(ch);
                         freq--;
                     }
                 }
             }
         }
-        return sb.toString();
+        return sbr.toString();
     }
 }
 
