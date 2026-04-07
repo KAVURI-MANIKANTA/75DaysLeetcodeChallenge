@@ -1,5 +1,18 @@
 class Solution {
     public int search(int[] nums, int target) {
+        int n = nums.length-1;
+        for(int i=0; i<=n; i++){
+            if(nums[i]==target) return i;
+        }
+        return -1;
+    }
+}
+
+
+
+/*
+class Solution {
+    public int search(int[] nums, int target) {
         int l = 0;
         int r = nums.length-1;
         int mid = 0;
@@ -18,3 +31,4 @@ class Solution {
         return -1;
     }
 }
+*/
