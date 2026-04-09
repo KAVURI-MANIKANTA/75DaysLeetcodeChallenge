@@ -142,3 +142,171 @@ Think like this:
 * We attach **nodes**, not just values
 
 */
+
+
+
+
+
+
+
+
+/*
+**LeetCode 21 – Merge Two Sorted Lists** into **Brute Force vs Optimal** clearly 👇
+
+---
+
+# 🧠 Problem Idea
+
+You are given two **sorted linked lists** → merge them into one sorted list.
+
+---
+
+# 🐢 1. Brute Force Approach
+
+## 💡 Idea
+
+* Copy all values from both lists into a container (like ArrayList)
+* Sort the list
+* Create a new linked list from sorted values
+
+---
+
+## 🪜 Steps
+
+1. Traverse `list1` → store values
+2. Traverse `list2` → store values
+3. Sort all values
+4. Create a **new linked list**
+
+---
+
+## 💻 Code (Java)
+
+```java
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        List<Integer> arr = new ArrayList<>();
+
+        while (list1 != null) {
+            arr.add(list1.val);
+            list1 = list1.next;
+        }
+
+        while (list2 != null) {
+            arr.add(list2.val);
+            list2 = list2.next;
+        }
+
+        Collections.sort(arr);
+
+        ListNode dummy = new ListNode(0);
+        ListNode temp = dummy;
+
+        for (int val : arr) {
+            temp.next = new ListNode(val);
+            temp = temp.next;
+        }
+
+        return dummy.next;
+    }
+}
+```
+
+---
+
+## ⏱ Complexity
+
+* Time: **O((n + m) log(n + m))**
+* Space: **O(n + m)**
+
+---
+
+## ❌ Problems
+
+* Extra space used
+* Sorting unnecessary (lists are already sorted!)
+
+---
+
+# ⚡ 2. Optimal Approach
+
+## 💡 Idea
+
+👉 Use **Two Pointers** and merge directly
+
+---
+
+## 🪜 Steps
+
+1. Compare `list1.val` and `list2.val`
+2. Attach smaller node
+3. Move that list forward
+4. Repeat
+5. Attach remaining nodes
+
+---
+
+## 💻 Code (Your Version ✅)
+
+```java
+class Solution {
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode();
+        ListNode pre = dummy;
+
+        while(list1 != null && list2 != null){
+            if(list1.val <= list2.val){
+                pre.next = list1;
+                list1 = list1.next;
+            } else {
+                pre.next = list2;
+                list2 = list2.next;
+            }
+            pre = pre.next;
+        }
+
+        if(list1 == null) pre.next = list2;
+        else pre.next = list1;
+
+        return dummy.next;
+    }
+}
+```
+
+---
+
+## ⏱ Complexity
+
+* Time: **O(n + m)** ✅
+* Space: **O(1)** ✅ (no extra list)
+
+---
+
+## 🔥 Why Optimal is Better
+
+* No sorting needed
+* No extra memory
+* Direct merge like **merge step in merge sort**
+
+---
+
+# 🆚 Final Comparison
+
+| Approach    | Time Complexity   | Space Complexity | Efficiency |
+| ----------- | ----------------- | ---------------- | ---------- |
+| Brute Force | O((n+m) log(n+m)) | O(n+m)           | ❌ Slow     |
+| Optimal     | O(n+m)            | O(1)             | ✅ Best     |
+
+---
+
+# 💡 Bonus (Interview Tip 🔥)
+
+If interviewer asks:
+👉 “Can you do better than sorting?”
+
+Say:
+
+> “Yes, since both lists are sorted, I can use two pointers and merge in O(n+m) time without extra space.”
+
+
+*/
