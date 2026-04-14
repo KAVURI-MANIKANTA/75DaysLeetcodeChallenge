@@ -110,12 +110,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0210-course-schedule-ii) |
+| [0226-invert-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0226-invert-binary-tree) |
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0207-course-schedule](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0210-course-schedule-ii) |
+| [0226-invert-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0226-invert-binary-tree) |
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 ## Matrix
 |  |
@@ -251,4 +253,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0021-merge-two-sorted-lists) |
 | [0143-reorder-list](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0206-reverse-linked-list) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
