@@ -15,17 +15,13 @@
  */
 class Solution {
     public TreeNode invertTree(TreeNode root) {
-        if(root==null) return root;
-        Queue<TreeNode> QTree = new LinkedList<>();
-        QTree.add(root);
-        while(!QTree.isEmpty()){
-            TreeNode QRoot = QTree.poll();
-            TreeNode temp = QRoot.left;
-            QRoot.left = QRoot.right;
-            QRoot.right = temp;
-            if(QRoot.left!=null) QTree.add(QRoot.left);
-            if(QRoot.right!=null) QTree.add(QRoot.right);
-        }
+        if(root==null) return null;
+        TreeNode left = invertTree(root.left);
+        TreeNode right = invertTree(root.right);
+        root.left = right;
+        root.right = left;
         return root;
     }
 }
+
+
