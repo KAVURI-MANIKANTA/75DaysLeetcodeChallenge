@@ -44,43 +44,43 @@ Hence return [3, 14.5, 11].
   3. Compute average = `sum / n`
 
 
----
+```java
 /*
-Definition for a binary tree node.<br>
-public class TreeNode {<br>
-     int val;<br>
-     TreeNode left;<br>
-     TreeNode right;<br>
-     TreeNode() {}<br>
-     TreeNode(int val) { this.val = val; }<br>
-     TreeNode(int val, TreeNode left, TreeNode right) {<br>
-         this.val = val;<br>
-         this.left = left;<br>
-         this.right = right;<br>
-     }<br>
- }<br>
-*/<br>
-class Solution {<br>
-    public List<Double> averageOfLevels(TreeNode root) {<br>
-        List<Double> res = new ArrayList<>();<br>
-        if(root==null) return res;<br>
-        Queue<TreeNode> q = new LinkedList<>();<br>
-        q.add(root);<br>
-        while(!q.isEmpty()){<br>
-            double n = q.size();<br>
-            double sum = 0;<br>
-            for(int i=0; i<n; i++){<br>
-                TreeNode peekN = q.poll();<br>
-                sum = sum + peekN.val;<br>
-                if(peekN.left!=null) q.add(peekN.left);<br>
-                if(peekN.right!=null) q.add(peekN.right);<br>
-             }<br>
-            res.add(sum/n);<br>
-        }<br>
-        return res;<br>
-    }<br>
-}<br>
----
+Definition for a binary tree node.
+public class TreeNode {
+     int val;
+     TreeNode left;
+     TreeNode right;
+     TreeNode() {}
+     TreeNode(int val) { this.val = val; }
+     TreeNode(int val, TreeNode left, TreeNode right) {
+         this.val = val;
+         this.left = left;
+         this.right = right;
+     }
+ }
+*/
+class Solution {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> res = new ArrayList<>();
+        if(root==null) return res;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            double n = q.size();
+            double sum = 0;
+            for(int i=0; i<n; i++){
+                TreeNode peekN = q.poll();
+                sum = sum + peekN.val;
+                if(peekN.left!=null) q.add(peekN.left);
+                if(peekN.right!=null) q.add(peekN.right);
+             }
+            res.add(sum/n);
+        }
+        return res;
+    }
+}
+```
 ---
 
 # 🔍 Code Explanation (Line by Line)
