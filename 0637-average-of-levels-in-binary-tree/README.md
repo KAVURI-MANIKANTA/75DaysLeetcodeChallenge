@@ -44,7 +44,7 @@ Hence return [3, 14.5, 11].
   3. Compute average = `sum / n`
 
 
----
+
 /*
 Definition for a binary tree node.
 public class TreeNode {
@@ -80,7 +80,6 @@ class Solution {
         return res;
     }
 }
----
 
 ---
 
