@@ -23,3 +23,330 @@ Hence return [3, 14.5, 11].
 	<li>The number of nodes in the tree is in the range <code>[1, 10<sup>4</sup>]</code>.</li>
 	<li><code>-2<sup>31</sup> &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+<p>
+---
+
+# 🌳 Problem in One Line
+
+👉 For each level of a tree, find the **average of values**
+
+---
+
+# 🧠 Core Idea (Very Simple)
+
+👉 Use **BFS (level order traversal)**
+
+* Process tree **level by level**
+* For each level:
+
+  1. Count nodes (`n`)
+  2. Add their values (`sum`)
+  3. Compute average = `sum / n`
+
+
+---
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    public List<Double> averageOfLevels(TreeNode root) {
+        List<Double> res = new ArrayList<>();
+        if(root==null) return res;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            double n = q.size();
+            double sum = 0;
+            for(int i=0; i<n; i++){
+                TreeNode peekN = q.poll();
+                sum = sum + peekN.val;
+                if(peekN.left!=null) q.add(peekN.left);
+                if(peekN.right!=null) q.add(peekN.right);
+             }
+            res.add(sum/n);
+        }
+        return res;
+    }
+}
+---
+
+---
+
+# 🔍 Code Explanation (Line by Line)
+
+```java
+List<Double> res = new ArrayList<>();
+```
+
+👉 Store final answers (averages of each level)
+
+---
+
+```java
+if(root == null) return res;
+```
+
+👉 If tree is empty → return empty list
+
+---
+
+```java
+Queue<TreeNode> q = new LinkedList<>();
+q.add(root);
+```
+
+👉 Queue helps us process nodes **level by level**
+
+---
+
+## 🔁 Main Loop
+
+```java
+while(!q.isEmpty())
+```
+
+👉 Run until all nodes are processed
+
+---
+
+### 📌 Step 1: Count nodes in current level
+
+```java
+int n = q.size();
+```
+
+👉 This tells:
+
+> “How many nodes are present in this level?”
+
+---
+
+### 📌 Step 2: Initialize sum
+
+```java
+double sum = 0;
+```
+
+---
+
+### 📌 Step 3: Process all nodes of that level
+
+```java
+for(int i = 0; i < n; i++)
+```
+
+👉 Loop runs **n times = one full level**
+
+---
+
+### Inside loop:
+
+```java
+TreeNode node = q.poll();
+```
+
+👉 Remove node from queue
+
+---
+
+```java
+sum += node.val;
+```
+
+👉 Add its value
+
+---
+
+```java
+if(node.left != null) q.add(node.left);
+if(node.right != null) q.add(node.right);
+```
+
+👉 Add children for **next level**
+
+---
+
+### 📌 Step 4: Add average
+
+```java
+res.add(sum / n);
+```
+
+👉 Store average of current level
+
+---
+
+# 🔁 Dry Run (Step by Step)
+
+Tree:
+
+```text
+        3
+       / \
+      9   20
+          / \
+         15  7
+```
+
+---
+
+## 🟢 Start
+
+Queue = `[3]`
+Result = `[]`
+
+---
+
+## 🔵 Level 1
+
+```text
+n = 1
+```
+
+Process:
+
+* node = 3 → sum = 3
+* add 9, 20
+
+Queue:
+
+```text
+[9, 20]
+```
+
+Average:
+
+```text
+3 / 1 = 3
+```
+
+Result:
+
+```text
+[3.0]
+```
+
+---
+
+## 🔵 Level 2
+
+```text
+n = 2
+```
+
+Process:
+
+* node = 9 → sum = 9
+* node = 20 → sum = 29
+* add 15, 7
+
+Queue:
+
+```text
+[15, 7]
+```
+
+Average:
+
+```text
+29 / 2 = 14.5
+```
+
+Result:
+
+```text
+[3.0, 14.5]
+```
+
+---
+
+## 🔵 Level 3
+
+```text
+n = 2
+```
+
+Process:
+
+* node = 15 → sum = 15
+* node = 7 → sum = 22
+
+Queue:
+
+```text
+[]
+```
+
+Average:
+
+```text
+22 / 2 = 11
+```
+
+Result:
+
+```text
+[3.0, 14.5, 11.0]
+```
+
+---
+
+# ⏱️ Time Complexity
+
+👉 **O(n)**
+
+Why?
+
+* Each node is visited **exactly once**
+
+---
+
+# 💾 Space Complexity
+
+👉 **O(n)**
+
+Why?
+
+* Queue stores nodes
+* In worst case (last level), it can store ~n/2 nodes
+
+---
+
+# 🧠 Important Pattern (Remember This!)
+
+👉 This pattern works for ALL level-order problems:
+
+```text
+while queue not empty:
+    get size (level size)
+    loop size times:
+        process node
+        add children
+    do something with level result
+```
+
+---
+
+# 🎯 Final Understanding
+
+👉 This problem = **Level Order + Calculation**
+
+* BFS → gives levels
+* Sum → gives total
+* Divide → gives average
+
+---
+
+</p>
