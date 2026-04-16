@@ -15,19 +15,19 @@
  */
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        Queue<TreeNode> qu = new LinkedList<>();
-        qu.add(p);
-        qu.add(q);
-        while(!qu.isEmpty()){
-            TreeNode peek1 = qu.poll();
-            TreeNode peek2 = qu.poll();
-            if(peek1==null && peek2==null) continue;
-            if(peek1==null || peek2==null || peek1.val!=peek2.val) return false;
-            qu.add(peek1.left);
-            qu.add(peek2.left);
-            qu.add(peek1.right);
-            qu.add(peek2.right);
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        preorder(p,list1);
+        preorder(q,list2);
+        return list1.equals(list2);
+    }
+    public void preorder(TreeNode node, List<String> list){
+        if(node==null){
+            list.add("null");
+            return;
         }
-        return true;
+        list.add(String.valueOf(node.val));
+        preorder(node.left,list);
+        preorder(node.right,list);
     }
 }
