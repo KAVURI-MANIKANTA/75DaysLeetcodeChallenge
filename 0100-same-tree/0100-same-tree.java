@@ -15,6 +15,38 @@
  */
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
+        if(p==null && q==null) return true;
+        if(p==null || q==null || p.val!=q.val) return false;
+        return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+    }
+}
+
+
+/*
+class Solution {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        Queue<TreeNode> qu = new LinkedList<>();
+        qu.add(p);
+        qu.add(q);
+        while(!qu.isEmpty()){
+            TreeNode peek1 = qu.poll();
+            TreeNode peek2 = qu.poll();
+            if(peek1==null && peek2==null) continue;
+            if(peek1==null || peek2==null || peek1.val!=peek2.val) return false;
+            qu.add(peek1.left);
+            qu.add(peek2.left);
+            qu.add(peek1.right);
+            qu.add(peek2.right);
+        }
+        return true;
+    }
+}
+*/
+
+
+/*
+class Solution {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         preorder(p,list1);
@@ -31,3 +63,4 @@ class Solution {
         preorder(node.right,list);
     }
 }
+*/
