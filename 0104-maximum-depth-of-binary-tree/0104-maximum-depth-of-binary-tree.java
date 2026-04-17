@@ -21,24 +21,3 @@ class Solution {
         return 1+Math.max(lh,rh);
     }
 }
-
-/*
-class Solution {
-    public int maxDepth(TreeNode root) {
-        if(root==null) return 0;
-        Queue<TreeNode> qt = new LinkedList<>();
-        qt.add(root);
-        int ans = 0;
-        while(!qt.isEmpty()){
-            ans++;
-            int n = qt.size();
-            for(int i=0; i<n; i++){
-                TreeNode PeekN = qt.poll();
-                if(PeekN.left!=null) qt.add(PeekN.left);
-                if(PeekN.right!=null) qt.add(PeekN.right);
-            }
-        }
-        return ans;
-    }
-}
-*/
