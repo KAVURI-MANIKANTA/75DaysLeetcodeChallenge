@@ -81,7 +81,6 @@ This approach is doing:
 
 > “From every node, check: do I contain p and q in my subtree?”
 
----
 
 ## 🔥 What recursion actually returns
 
@@ -93,7 +92,6 @@ This is the key you were missing:
 * `p` or `q` → found one node
 * `LCA` → already found answer
 
----
 
 ## 🔍 Deep Dry Run
 
@@ -178,7 +176,7 @@ BUT:
 
 Good — this is exactly the right way to understand it deeply 👍
 We’ll go **condition by condition**, with **separate examples** for each.
-``
+``````
 # 🧠 First remember the 4 conditions
 
 At every node:
@@ -409,8 +407,7 @@ right = 1
 | Both found     | I am LCA    |
 | Only one found | Pass it up  |
 | None found     | return null |
-``
-
+``````
 # 🟢 2. OPTIMAL (BST – Iterative)
 
 Now we become **smart instead of brute**
