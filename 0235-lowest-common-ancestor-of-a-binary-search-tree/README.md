@@ -54,7 +54,6 @@ Think:
 * Paths from root → q
   👉 The **last common point** = LCA
 
----
 
 # 🔴 1. BRUTE FORCE (Full Tree Search)
 ```
@@ -110,50 +109,30 @@ Tree:
 
 Find LCA of `0` and `4`
 
----
 
 ### Step-by-step recursion
 
 #### Call at node 6
-
-```text
 left = LCA(2)
 right = LCA(8)
-```
-
----
 
 #### Call at node 2
-
-```text
 left = LCA(0)
 right = LCA(4)
-```
-
----
 
 #### Call at node 0
-
-```text
 root == p → return 0
-```
+
 
 #### Call at node 4
-
-```text
 root == q → return 4
-```
 
----
 
 #### Back to node 2
-
 Now:
-
-```text
 left = 0
 right = 4
-```
+
 
 👉 BOTH NON-NULL
 
@@ -163,20 +142,20 @@ right = 4
 
 👉 return 2
 
----
+
 
 #### Back to node 6
 
-```text
+
 left = 2
 right = null
-```
+
 
 👉 Only one side → pass it up
 
 👉 return 2
 
----
+
 
 ## 🧠 Why this works (important insight)
 
@@ -184,7 +163,7 @@ right = null
 * It finds p and q **bottom-up**
 * The **first node where both sides return something = LCA**
 
----
+
 
 ## ⚠️ Important Observation
 
@@ -196,12 +175,10 @@ This works for:
 
 BUT:
 👉 It wastes time searching entire tree
-```
+
 Good — this is exactly the right way to understand it deeply 👍
 We’ll go **condition by condition**, with **separate examples** for each.
-
----
-````````
+``
 # 🧠 First remember the 4 conditions
 
 At every node:
@@ -432,13 +409,7 @@ right = 1
 | Both found     | I am LCA    |
 | Only one found | Pass it up  |
 | None found     | return null |
-
----
-
----
-````````
-```
----
+``
 
 # 🟢 2. OPTIMAL (BST – Iterative)
 
@@ -461,7 +432,7 @@ class Solution {
     }
 }
 ```
----
+
 
 ## 🧠 Core Insight
 
@@ -473,7 +444,7 @@ left < root < right
 
 👉 So we don’t need to search everywhere
 
----
+
 
 ## 🔥 Key Observation
 
@@ -491,7 +462,7 @@ Both are **smaller than 6**
 
 💡 No need to check right side at all
 
----
+
 
 ## 🔍 Deep Dry Run
 
@@ -507,7 +478,7 @@ Same tree:
 
 Find LCA of `0` and `4`
 
----
+
 
 ### Step 1: root = 6
 
@@ -517,7 +488,7 @@ p=0, q=4 → both < 6
 
 👉 Move LEFT
 
----
+
 
 ### Step 2: root = 2
 
@@ -530,7 +501,7 @@ q=4 > 2
 
 💥 This is LCA
 
----
+
 
 ## 🧠 Why split means LCA?
 
@@ -541,8 +512,6 @@ Because:
 
 👉 So this is the **first meeting point**
 
----
-
 ## ⚠️ Key Difference from Brute Force
 
 | Brute Force                       | Optimal                       |
@@ -550,7 +519,7 @@ Because:
 | searches BOTH sides               | chooses ONE direction         |
 | finds answer after full traversal | finds answer while going down |
 
----
+
 
 # 🔵 3. YOUR CODE (Recursive BST)
 
@@ -571,7 +540,7 @@ class Solution {
     }
 }
 ```
----
+``
 
 ## 🧠 What your recursion is doing
 
@@ -583,7 +552,7 @@ It is doing:
 "Only go where both nodes exist"
 ```
 
----
+
 
 ## 🔍 Deep Dry Run
 
@@ -597,7 +566,7 @@ Tree:
     0   4
 ```
 
----
+
 
 ### Call 1: root = 6
 
@@ -611,7 +580,6 @@ p=0, q=4 → both < 6
 return LCA(root.left)
 ```
 
----
 
 ### Call 2: root = 2
 
@@ -624,13 +592,13 @@ q=4 > 2
 
 👉 return root (2)
 
----
+
 
 ### Back to call 1
 
 👉 directly return 2
 
----
+
 
 ## 🧠 Important Insight
 
@@ -659,19 +627,16 @@ Unlike brute force:
 
 > “Let me search EVERYTHING, then decide”
 
----
 
 ### 🟢 Optimal (BST)
 
 > “I already know where both nodes are → go there directly”
 
----
 
 ### 🔵 Your Code
 
 > “Same as optimal, but using recursion instead of loop”
 
----
 
 # 🔥 Most Important Line to Remember
 
@@ -686,6 +651,5 @@ First node where left and right both return something = LCA
 ```text
 First node where p and q split = LCA
 ```
-
----
+``
 </p>
