@@ -81,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0074-search-a-2d-matrix) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0222-count-complete-tree-nodes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0222-count-complete-tree-nodes) |
 | [0287-find-the-duplicate-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0287-find-the-duplicate-number) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0704-binary-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0704-binary-search) |
@@ -213,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0222-count-complete-tree-nodes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0222-count-complete-tree-nodes) |
 | [0287-find-the-duplicate-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0287-find-the-duplicate-number) |
 | [0389-find-the-difference](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0389-find-the-difference) |
 ## Stack
@@ -273,6 +275,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0100-same-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0112-path-sum) |
+| [0222-count-complete-tree-nodes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
@@ -288,6 +291,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0100-same-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0112-path-sum) |
+| [0222-count-complete-tree-nodes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0222-count-complete-tree-nodes) |
 | [0226-invert-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
