@@ -28,8 +28,9 @@ class Solution {
                 if(peek.left!=null) q.add(peek.left);
                 if(peek.right!=null) q.add(peek.right);
             }
-            res.add(0,lev);
+            res.add(lev);
         }
+        Collections.reverse(res);
         return res;
     }
 }
