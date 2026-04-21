@@ -21,7 +21,7 @@ class Solution {
     }
     public void dfs(TreeNode root, int l, List<List<Integer>> res){
         if(root==null) return;
-        if(l==res.size()) res.add(new ArrayList());
+        if(l==res.size()) res.add(new ArrayList<>());
         res.get(l).add(root.val);
         dfs(root.left, l+1, res);
         dfs(root.right, l+1, res);
