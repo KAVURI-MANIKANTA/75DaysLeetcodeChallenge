@@ -20,15 +20,13 @@ class Solution {
         if(root==null) return res;
         q.add(root);
         while(!q.isEmpty()){
-            int rn = 0;
             int n = q.size();
             for(int i=0; i<n; i++){
                 TreeNode peek = q.poll();
-                rn = peek.val;
+                if(i==n-1) res.add(peek.val);
                 if(peek.left!=null) q.add(peek.left);
                 if(peek.right!=null) q.add(peek.right);
             }
-            res.add(rn);
         }
         return res;
     }
