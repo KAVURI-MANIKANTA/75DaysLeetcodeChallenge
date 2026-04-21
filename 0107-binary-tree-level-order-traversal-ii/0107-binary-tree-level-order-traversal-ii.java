@@ -17,12 +17,13 @@ class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
         dfs(root,0,res);
+        Collections.reverse(res);
         return res;
     }
     public void dfs(TreeNode root, int l, List<List<Integer>> res){
         if(root==null) return ;
-        if(l==res.size()) res.add(0,new ArrayList<>());
-        res.get(res.size()-l-1).add(root.val);
+        if(l==res.size()) res.add(new ArrayList<>());
+        res.get(l).add(root.val);
         dfs(root.left,l+1,res);
         dfs(root.right,l+1,res);
     }
