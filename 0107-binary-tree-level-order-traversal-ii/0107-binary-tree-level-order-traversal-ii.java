@@ -16,15 +16,20 @@
 class Solution {
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
         List<List<Integer>> res = new ArrayList<>();
-        dfs(root,0,res);
-        Collections.reverse(res);
+        if(root==null) return res;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        while(!q.isEmpty()){
+            int n = q.size();
+            List<Integer> lev = new ArrayList<>();
+            for(int i=0; i<n; i++){
+                TreeNode peek = q.poll();
+                lev.add(peek.val);
+                if(peek.left!=null) q.add(peek.left);
+                if(peek.right!=null) q.add(peek.right);
+            }
+            res.add(0,lev);
+        }
         return res;
-    }
-    public void dfs(TreeNode root, int l, List<List<Integer>> res){
-        if(root==null) return ;
-        if(l==res.size()) res.add(new ArrayList<>());
-        res.get(l).add(root.val);
-        dfs(root.left,l+1,res);
-        dfs(root.right,l+1,res);
     }
 }
