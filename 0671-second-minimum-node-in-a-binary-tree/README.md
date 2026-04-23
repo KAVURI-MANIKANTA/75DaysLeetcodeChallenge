@@ -32,11 +32,7 @@
 	<li><code>root.val == min(root.left.val, root.right.val)</code>&nbsp;for each internal node of the tree.</li>
 </ul>
 <p>
-Yes — your idea **(store values in ArrayList → compare → return)** will work ✅
-…but it’s **not the best approach**, and interviewers may expect something smarter.
-
-Let’s go step by step so you fully understand 👇
-
+========================================================================
 ---
 
 # 🔷 Problem (Second Minimum Node In a Binary Tree)
