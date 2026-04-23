@@ -31,3 +31,206 @@
 	<li><code>1 &lt;= Node.val &lt;= 2<sup>31</sup> - 1</code></li>
 	<li><code>root.val == min(root.left.val, root.right.val)</code>&nbsp;for each internal node of the tree.</li>
 </ul>
+<p>
+Yes — your idea **(store values in ArrayList → compare → return)** will work ✅
+…but it’s **not the best approach**, and interviewers may expect something smarter.
+
+Let’s go step by step so you fully understand 👇
+
+---
+
+# 🔷 Problem (Second Minimum Node In a Binary Tree)
+
+### Given:
+
+A special binary tree where:
+
+```text
+Every node = min(left, right)
+```
+
+👉 That means:
+
+* Root = smallest value in entire tree
+* Children ≥ parent
+
+---
+
+### Task:
+
+👉 Find the **second minimum value**
+👉 If it doesn’t exist → return `-1`
+
+---
+
+# 🔷 Example
+
+```text
+        2
+       / \
+      2   5
+         / \
+        5   7
+```
+
+👉 Values: `[2, 2, 5, 5, 7]`
+👉 Smallest = `2`
+👉 Second smallest = `5`
+
+---
+
+# 🔷 Brute Force
+
+### Idea:
+
+1. Traverse tree
+2. Store all values in ArrayList
+3. Sort / find unique
+4. Return second smallest
+
+---
+
+### Code:
+
+```java
+class Solution {
+    public int findSecondMinimumValue(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        dfs(root, list);
+
+        Collections.sort(list);
+
+        int first = list.get(0);
+
+        for (int num : list) {
+            if (num > first) return num;
+        }
+
+        return -1;
+    }
+
+    public void dfs(TreeNode root, List<Integer> list) {
+        if (root == null) return;
+
+        list.add(root.val);
+        dfs(root.left, list);
+        dfs(root.right, list);
+    }
+}
+```
+
+---
+
+# 🔷 Complexity
+
+* Time: **O(n log n)** (sorting)
+* Space: **O(n)**
+
+---
+
+# ❗ Is it OK?
+
+👉 YES for understanding
+👉 BUT ❌ Not optimal for interviews
+
+Because:
+
+* You are using extra space
+* You are ignoring the **special property of tree**
+
+---
+
+# 🔷 Optimal Approach (IMPORTANT)
+
+### 🔥 Key Observation:
+
+```text
+Root = smallest value
+```
+
+So:
+👉 We only need to find the **smallest value > root.val**
+
+---
+
+# 🔷 Intuition
+
+* If node value == root → explore children
+* If node value > root → candidate for answer
+
+---
+
+# 🔷 Optimal Code
+
+```java
+class Solution {
+    public int findSecondMinimumValue(TreeNode root) {
+        if (root == null) return -1;
+
+        return helper(root, root.val);
+    }
+
+    public int helper(TreeNode root, int min) {
+        if (root == null) return -1;
+
+        if (root.val > min) return root.val;
+
+        int left = helper(root.left, min);
+        int right = helper(root.right, min);
+
+        if (left == -1) return right;
+        if (right == -1) return left;
+
+        return Math.min(left, right);
+    }
+}
+```
+
+---
+
+# 🔷 Dry Run
+
+Tree:
+
+```text
+        2
+       / \
+      2   5
+```
+
+* root = 2
+* left = 2 → ignore → go deeper
+* right = 5 → candidate
+
+👉 Answer = 5
+
+---
+
+# 🔷 Complexity
+
+* Time: **O(n)**
+* Space: **O(h)** (recursion)
+
+---
+
+# 🔷 Easy Memory Trick 🧠
+
+```text
+Need smallest? → root
+
+Need second smallest?
+→ find smallest > root
+```
+
+---
+
+# 🔷 Final Verdict
+
+| Approach         | Good?  | Why               |
+| ---------------- | ------ | ----------------- |
+| ArrayList + sort | ✅ OK   | Easy but slow     |
+| DFS without list | ⭐ BEST | Uses BST property |
+
+---
+
+</p>
