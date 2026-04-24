@@ -40,7 +40,211 @@ trie.search(&quot;app&quot;);     // return True
 <p>
 ========================================================================================
 
+**cheat sheet of Trie syntax** 👇
+````
+---
 
+# 🔥 1. Create Node
+
+```java
+TrieNode node = new TrieNode();
+```
+
+👉 Create a new node
+
+---
+
+# 🔥 2. Access children array
+
+```java
+node.children
+```
+
+👉 This is an array of size 26 (a–z)
+
+---
+
+# 🔥 3. Convert char → index
+
+```java
+int index = ch - 'a';
+```
+
+👉 VERY IMPORTANT
+👉 Used everywhere
+
+---
+
+# 🔥 4. Check if path exists
+
+```java
+if (node.children[index] == null)
+```
+
+👉 Means:
+
+> “This character path does NOT exist”
+
+---
+
+# 🔥 5. Create new node (insert step)
+
+```java
+node.children[index] = new TrieNode();
+```
+
+👉 Build path
+
+---
+
+# 🔥 6. Move to next node
+
+```java
+node = node.children[index];
+```
+
+👉 Traverse forward
+
+---
+
+# 🔥 7. Mark end of word
+
+```java
+node.isEnd = true;
+```
+
+👉 Word completed
+
+---
+
+# 🔥 8. Check full word exists
+
+```java
+return node.isEnd;
+```
+
+👉 Used in `search()`
+
+---
+
+# 🔥 9. Loop through word
+
+```java
+for (char ch : word.toCharArray())
+```
+
+👉 Iterate characters
+
+---
+
+# 🔥 10. Full insert pattern
+
+```java
+TrieNode node = root;
+
+for (char ch : word.toCharArray()) {
+    int index = ch - 'a';
+
+    if (node.children[index] == null) {
+        node.children[index] = new TrieNode();
+    }
+
+    node = node.children[index];
+}
+
+node.isEnd = true;
+```
+
+---
+
+# 🔥 11. Full search pattern
+
+```java
+TrieNode node = root;
+
+for (char ch : word.toCharArray()) {
+    int index = ch - 'a';
+
+    if (node.children[index] == null) {
+        return false;
+    }
+
+    node = node.children[index];
+}
+
+return node.isEnd;
+```
+
+---
+
+# 🔥 12. Full prefix pattern
+
+```java
+TrieNode node = root;
+
+for (char ch : prefix.toCharArray()) {
+    int index = ch - 'a';
+
+    if (node.children[index] == null) {
+        return false;
+    }
+
+    node = node.children[index];
+}
+
+return true;
+```
+
+---
+
+# 🧠 SUPER IMPORTANT (must remember)
+
+👉 These 3 lines are the **heart of Trie**
+
+```java
+int index = ch - 'a';
+if (node.children[index] == null)
+node = node.children[index];
+```
+
+---
+
+# 🔥 Bonus (common variations)
+
+## ✔ Count words
+
+```java
+node.count++;
+```
+
+---
+
+## ✔ Store full word (optional)
+
+```java
+node.word = word;
+```
+
+---
+
+## ✔ Check leaf node
+
+```java
+if (node.isEnd)
+```
+
+---
+
+# 🧠 Memory Trick
+
+👉 Every Trie problem = same pattern:
+
+```text
+START → LOOP → CHECK → MOVE → END
+```
+
+---
+````
 
 
 ---
