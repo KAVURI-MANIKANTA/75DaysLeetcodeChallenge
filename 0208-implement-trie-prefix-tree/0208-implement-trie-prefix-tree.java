@@ -1,22 +1,51 @@
+class TrieNode{
+    TrieNode[] children;
+    boolean isEnd;
+    TrieNode(){
+        children = new TrieNode[26];
+        isEnd = false;
+    }
+}
 class Trie {
-    Set<String> hs;
+    TrieNode root;
     public Trie() {
-        hs = new HashSet<>();
+        root = new TrieNode();
     }
     
     public void insert(String word) {
-        hs.add(word);
+        TrieNode node = root;
+        for(char ch:word.toCharArray()){
+            int index = ch-'a';
+            if(node.children[index]==null){
+                node.children[index] = new TrieNode();
+            }
+            node = node.children[index];
+        }
+        node.isEnd = true;
     }
     
     public boolean search(String word) {
-        return hs.contains(word);
+        TrieNode node = root;
+        for(char ch:word.toCharArray()){
+            int index = ch-'a';
+            if(node.children[index]==null){
+                return false;
+            }
+            node = node.children[index];
+        }
+        return node.isEnd;
     }
     
     public boolean startsWith(String prefix) {
-        for(String words:hs){
-            if(words.startsWith(prefix)) return true;
+        TrieNode node = root;
+        for(char ch:prefix.toCharArray()){
+            int index = ch-'a';
+            if(node.children[index]==null){
+                return false;
+            }
+            node = node.children[index];
         }
-        return false;
+        return true;
     }
 }
 
