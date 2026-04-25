@@ -25,19 +25,19 @@ class WordDictionary {
     }
     
     public boolean search(String word) {
-        return dfs(word,0,root);
+        return tdfs(word,0,root);
     }
-    public boolean dfs(String word, int i, TrieNode root){
+    public boolean tdfs(String word, int i, TrieNode root){
         if(root==null) return false;
         if(i==word.length()) return root.isEnd;
         char ch = word.charAt(i);
         if(ch!='.'){
-            return dfs(word,i+1,root.next[ch-'a']);
+            return tdfs(word,i+1,root.next[ch-'a']);
         }
         else{
             for(int k=0; k<26; k++){
                 if(root.next[k]!=null){
-                    if(dfs(word,i+1,root.next[k])) return true;
+                    if(tdfs(word,i+1,root.next[k])) return true;
                 }
             }
         }
