@@ -34,6 +34,7 @@
 <p><strong>Follow up:</strong> Could you solve the problem in linear time and in <code>O(1)</code> space?</p>
 <p>
 ---
+	
 **LeetCode 229 (Majority Element II)**
 
 ---
@@ -394,11 +395,11 @@ class Solution {
 
 # 🔥 Final Comparison
 
-# | Approach      | Time | Space | Notes              |
-# | ------------- | ---- | ----- | -----------------  |
-# | Your approach | O(n) | O(n)  | ❌ duplicate issue |
-# | Fixed HashMap | O(n) | O(n)  | ✅ correct         |
-# | Boyer-Moore   | O(n) | O(1)  | 🚀 best            |
+| Approach          |    Time    |    Space    |    Notes                |
+| ----------------- |    ----    |    -----    |    -----------------    |
+| **Your approach** |    O(n) 	 | 	  O(n)     |    ❌ duplicate issue   |
+| **Fixed HashMap** |    O(n) 	 |    O(n)     |    ✅ correct           |
+| **Boyer-Moore**   |    O(n) 	 | 	**O(1)**   |    🚀 **best**          |
 
 ---
 
