@@ -3,16 +3,14 @@ class Solution {
         int count = 0;
         int n = s.length();
         for(int r=0; r<k; r++){
-            char ch = s.charAt(r);
-            if(isVowel(ch)){
+            if(isVowel(s.charAt(r))){
                 count++;
             }
         }
         int l=0;
         int max = count;
         for(int r=k; r<n; r++){
-            char ch = s.charAt(r);
-            if(isVowel(ch)){
+            if(isVowel(s.charAt(r))){
                 count++;
             }
             if(isVowel(s.charAt(r-k))){
