@@ -4,9 +4,10 @@ class Solution {
         int cnt = 0;
         for(int num:nums){
             if(cnt==0){
+                cnt++;
                 cand = num;
             }
-            if(cand==num){
+            else if(cand==num){
                 cnt++;
             }
             else{
