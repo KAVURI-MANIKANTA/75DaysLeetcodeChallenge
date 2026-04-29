@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1572-matrix-diagonal-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1572-matrix-diagonal-sum) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
+| [2319-check-if-matrix-is-x-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2319-check-if-matrix-is-x-matrix) |
 ## Hash Table
 |  |
 | ------- |
@@ -181,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 | [1572-matrix-diagonal-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1572-matrix-diagonal-sum) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
+| [2319-check-if-matrix-is-x-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2319-check-if-matrix-is-x-matrix) |
 ## Math
 |  |
 | ------- |
