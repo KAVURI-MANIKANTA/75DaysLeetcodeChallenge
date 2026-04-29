@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1502-can-make-arithmetic-progression-from-sequence) |
+| [1572-matrix-diagonal-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1572-matrix-diagonal-sum) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
 ## Hash Table
@@ -178,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0074-search-a-2d-matrix) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
+| [1572-matrix-diagonal-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1572-matrix-diagonal-sum) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
 ## Math
 |  |
