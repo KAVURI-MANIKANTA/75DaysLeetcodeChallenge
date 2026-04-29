@@ -55,3 +55,506 @@
 	<li><code>board[i].length == 9</code></li>
 	<li><code>board[i][j]</code> is a digit <code>1-9</code> or <code>&#39;.&#39;</code>.</li>
 </ul>
+<p>
+---
+	
+**brute force → simple using 3 HashSets** (this is actually the easiest way to understand before optimization).
+---
+---
+
+
+# 🔴 1. Brute Force Solution
+
+# 🟡 Idea (Very Simple)
+
+Instead of:
+
+* scanning row again and again ❌
+
+We do:
+
+* **one pass**
+* use **3 separate HashSets**
+
+👉 For every row, column, and box we track numbers
+
+---
+
+# ✅ Code (3 HashSets)
+
+```java
+import java.util.*;
+
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+
+        // 9 sets for rows
+        HashSet<Character>[] rows = new HashSet[9];
+        // 9 sets for cols
+        HashSet<Character>[] cols = new HashSet[9];
+        // 9 sets for boxes
+        HashSet<Character>[] boxes = new HashSet[9];
+
+        // initialize all sets
+        for(int i = 0; i < 9; i++){
+            rows[i] = new HashSet<>();
+            cols[i] = new HashSet<>();
+            boxes[i] = new HashSet<>();
+        }
+
+        for(int i = 0; i < 9; i++){
+            for(int j = 0; j < 9; j++){
+
+                char num = board[i][j];
+
+                if(num == '.') continue;
+
+                int boxIndex = (i/3) * 3 + (j/3);
+
+                // check duplicate
+                if(rows[i].contains(num) || 
+                   cols[j].contains(num) || 
+                   boxes[boxIndex].contains(num)){
+                    return false;
+                }
+
+                // add number
+                rows[i].add(num);
+                cols[j].add(num);
+                boxes[boxIndex].add(num);
+            }
+        }
+
+        return true;
+    }
+}
+```
+
+---
+
+# 🧠 Explanation (Step-by-step)
+
+## 🔹 What we created
+
+```java
+rows[0] → numbers in row 0
+cols[1] → numbers in column 1
+boxes[4] → numbers in box 4
+```
+
+---
+
+## 🔍 Example
+
+Suppose:
+
+```java
+board[0][0] = '5'
+```
+
+### Step 1:
+
+```java
+rows[0].contains('5') ? ❌
+cols[0].contains('5') ? ❌
+boxes[0].contains('5') ? ❌
+```
+
+👉 No duplicate → safe
+
+---
+
+### Step 2:
+
+```java
+rows[0].add('5')
+cols[0].add('5')
+boxes[0].add('5')
+```
+
+---
+
+## ❌ Duplicate Case
+
+Later:
+
+```java
+board[0][3] = '5'
+```
+
+Check:
+
+```java
+rows[0].contains('5') → YES ❌
+```
+
+👉 Same row duplicate → return false
+
+---
+
+# 📦 Box Index Understanding
+
+```java
+int boxIndex = (i/3) * 3 + (j/3);
+```
+
+| (i,j) | Box |
+| ----- | --- |
+| (0,0) | 0   |
+| (0,5) | 1   |
+| (4,4) | 4   |
+| (8,8) | 8   |
+
+---
+
+# 🔥 Why This is Easier Than String Method
+
+| Method     | Difficulty             |
+| ---------- | ---------------------- |
+| Strings    | Confusing (collisions) |
+| 3 HashSets | 🔥 Very clear          |
+
+---
+
+# ⏱️ Complexity
+
+* Time: `O(81)` → `O(1)`
+* Space: `O(81)` → `O(1)`
+
+---
+
+# 🎯 Final Intuition
+
+Instead of:
+
+> “Let me check whole row again”
+
+We do:
+
+> “Did I already see this number in this row?”
+
+---
+
+# 💬 Summary
+
+* 9 sets for rows
+* 9 sets for cols
+* 9 sets for boxes
+* Check → then insert
+
+---
+mention **TC & SC** in interviews 👍
+
+Let’s analyze your **3 HashSet approach**
+
+---
+
+# ⏱️ Time Complexity (TC)
+
+### 🔍 Loops
+
+```java
+for(int i = 0; i < 9; i++){
+    for(int j = 0; j < 9; j++){
+```
+
+👉 Total iterations:
+
+```
+9 × 9 = 81 cells
+```
+
+---
+
+### 🔍 Inside each cell
+
+```java
+contains()  → O(1)
+add()       → O(1)
+```
+
+👉 Constant time operations
+
+---
+
+## ✅ Final TC
+
+```
+O(81) → O(1)
+```
+
+👉 Because Sudoku size is **fixed (9×9)**
+
+---
+
+# 📦 Space Complexity (SC)
+
+### 🔍 What we use
+
+```java
+HashSet<Character>[] rows = new HashSet[9];
+HashSet<Character>[] cols = new HashSet[9];
+HashSet<Character>[] boxes = new HashSet[9];
+```
+
+👉 Total sets:
+
+```
+9 + 9 + 9 = 27 sets
+```
+
+Each set can store **at most 9 elements**
+
+---
+
+### 🔢 Total storage
+
+```
+27 × 9 = 243 elements (max)
+```
+
+---
+
+## ✅ Final SC
+
+```
+O(1)
+```
+
+👉 Because max size is fixed (not dependent on input)
+
+---
+
+# 🔥 Interview Tip (VERY IMPORTANT)
+
+If interviewer asks:
+
+👉 “What if board size is N×N?”
+
+Then answer:
+
+### ✔️ Time Complexity
+
+```
+O(N²)
+```
+
+### ✔️ Space Complexity
+
+```
+O(N²)
+```
+
+---
+
+# 🎯 Final Answer Summary
+
+| Metric           | Value                           |
+| ---------------- | ------------------------------- |
+| Time Complexity  | **O(1)** (or O(N²) generalized) |
+| Space Complexity | **O(1)** (or O(N²) generalized) |
+
+---
+
+# 💬 One-line Answer (for interview)
+
+> “We traverse the board once, so time is O(1) for fixed size, and we use constant extra space for storing seen elements.”
+
+---
+
+---
+
+# 🟡 2. Your Approach (HashSet) – Improved
+
+## 💡 Idea
+
+Instead of re-checking:
+👉 Store what you've already seen
+
+---
+
+## ✅ Your Code (Slightly Cleaned)
+
+```java
+import java.util.HashSet;
+
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+
+        HashSet<String> hs = new HashSet<>();
+
+        for(int i = 0; i < 9; i++){
+            for(int j = 0; j < 9; j++){
+
+                if(board[i][j] == '.') continue;
+
+                char num = board[i][j];
+
+                String row = i + "r" + num;
+                String col = j + "c" + num;
+                String box = (i/3) + "" + (j/3) + num;
+
+                if(hs.contains(row) || hs.contains(col) || hs.contains(box)){
+                    return false;
+                }
+
+                hs.add(row);
+                hs.add(col);
+                hs.add(box);
+            }
+        }
+        return true;
+    }
+}
+```
+
+---
+
+## 🧠 Explanation (VERY IMPORTANT)
+
+For each number:
+
+```java
+'5' at (i=1, j=2)
+```
+
+We store:
+
+```text
+"1r5"   → 5 seen in row 1
+"2c5"   → 5 seen in col 2
+"025"   → 5 seen in box (0,2)
+```
+
+---
+
+### 🔥 What HashSet does
+
+* If same key appears again → duplicate
+* Immediately return `false`
+
+---
+
+### 🎯 Why this is better than brute force
+
+| Brute Force       | HashSet       |
+| ----------------- | ------------- |
+| Re-checks again   | Stores once   |
+| Repeated scanning | Direct lookup |
+| Slower            | Faster        |
+
+---
+
+## ⏱️ Complexity
+
+* Time: `O(81)` → `O(1)`
+* Space: `O(81)` → `O(1)`
+
+---
+
+# 🟢 3. Optimal Solution (Best – Boolean Arrays)
+
+## 💡 Idea
+
+Instead of Strings:
+👉 Use direct indexing
+
+---
+
+## ✅ Code
+
+```java
+class Solution {
+    public boolean isValidSudoku(char[][] board) {
+
+        boolean[][] rows = new boolean[9][9];
+        boolean[][] cols = new boolean[9][9];
+        boolean[][] boxes = new boolean[9][9];
+
+        for(int i = 0; i < 9; i++){
+            for(int j = 0; j < 9; j++){
+
+                if(board[i][j] == '.') continue;
+
+                int num = board[i][j] - '1'; // 0 to 8
+                int boxIndex = (i/3) * 3 + (j/3);
+
+                if(rows[i][num] || cols[j][num] || boxes[boxIndex][num]){
+                    return false;
+                }
+
+                rows[i][num] = true;
+                cols[j][num] = true;
+                boxes[boxIndex][num] = true;
+            }
+        }
+        return true;
+    }
+}
+```
+
+---
+
+## 🧠 Explanation
+
+Example:
+
+```java
+board[i][j] = '5'
+```
+
+```java
+num = 5 - 1 = 4
+```
+
+Now:
+
+```java
+rows[i][4]   → is 5 already in row i?
+cols[j][4]   → is 5 already in col j?
+boxes[b][4]  → is 5 already in box?
+```
+
+---
+
+## 📦 Box Index Trick
+
+```java
+int boxIndex = (i/3) * 3 + (j/3);
+```
+
+| (i,j) | Box |
+| ----- | --- |
+| (0,0) | 0   |
+| (1,4) | 1   |
+| (4,7) | 5   |
+| (8,8) | 8   |
+
+---
+
+## ⏱️ Complexity
+
+* Time: `O(81)` → `O(1)`
+* Space: `O(1)`
+* 🔥 Fastest in practice
+
+---
+
+# 🚀 Final Comparison
+
+| Approach      | Time | Space | Difficulty | Interview |
+| ------------- | ---- | ----- | ---------- | --------- |
+| Brute Force   | O(1) | O(1)  | Easy       | ❌         |
+| HashSet       | O(1) | O(1)  | Medium     | ✅         |
+| Boolean Array | O(1) | O(1)  | Medium     | 🔥 Best   |
+
+---
+
+# 🎯 Final Takeaway
+
+* Brute force → **using 3 hashsets**
+* HashSet → **stores rules as strings**
+* Boolean → **direct indexing (fastest & cleanest)**
+
+---
+</p>
