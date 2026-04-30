@@ -1,5 +1,6 @@
 class Solution {
     public int longestConsecutive(int[] nums) {
+        if(nums.length==0) return 0;
         HashSet<Integer> hs = new HashSet<>();
         for(int num:nums){
             hs.add(num);
@@ -13,7 +14,7 @@ class Solution {
                     nn++;
                     cl++;
                 }
-                ln = Math.max(ln,cl);
+                if(cl>ln) ln = cl;
             }
         }
         return ln;
