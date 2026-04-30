@@ -9,9 +9,9 @@ class Solution {
         for(int num:hs){
             if(!hs.contains(num-1)){
                 int cl = 1;
-                int nn = num+1;
-                while(hs.contains(nn)){
-                    nn++;
+                int curr = num;
+                while(hs.contains(curr+1)){
+                    curr++;
                     cl++;
                 }
                 if(cl>ln) ln = cl;
