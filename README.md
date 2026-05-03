@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
+| [0977-squares-of-a-sorted-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0977-squares-of-a-sorted-array) |
 | [1046-last-stone-weight](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1046-last-stone-weight) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
@@ -85,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0389-find-the-difference](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0389-find-the-difference) |
 | [0451-sort-characters-by-frequency](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0451-sort-characters-by-frequency) |
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
+| [0977-squares-of-a-sorted-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0977-squares-of-a-sorted-array) |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1502-can-make-arithmetic-progression-from-sequence) |
 ## Sliding Window
 |  |
@@ -245,6 +247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0287-find-the-duplicate-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0287-find-the-duplicate-number) |
 | [0344-reverse-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0344-reverse-string) |
 | [0876-middle-of-the-linked-list](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0876-middle-of-the-linked-list) |
+| [0977-squares-of-a-sorted-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0977-squares-of-a-sorted-array) |
 | [1768-merge-strings-alternately](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1768-merge-strings-alternately) |
 ## Graph Theory
 |  |
