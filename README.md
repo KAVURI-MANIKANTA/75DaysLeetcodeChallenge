@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
 | [2319-check-if-matrix-is-x-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2319-check-if-matrix-is-x-matrix) |
+| [3477-fruits-into-baskets-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/3477-fruits-into-baskets-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0704-binary-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0713-subarray-product-less-than-k) |
+| [3477-fruits-into-baskets-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/3477-fruits-into-baskets-ii) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -416,4 +418,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0128-longest-consecutive-sequence) |
+## Segment Tree
+|  |
+| ------- |
+| [3477-fruits-into-baskets-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/3477-fruits-into-baskets-ii) |
+## Simulation
+|  |
+| ------- |
+| [3477-fruits-into-baskets-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/3477-fruits-into-baskets-ii) |
+## Ordered Set
+|  |
+| ------- |
+| [3477-fruits-into-baskets-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/3477-fruits-into-baskets-ii) |
 <!---LeetCode Topics End-->
