@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0713-subarray-product-less-than-k) |
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 | [0739-daily-temperatures](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0739-daily-temperatures) |
+| [0904-fruit-into-baskets](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
@@ -72,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0451-sort-characters-by-frequency](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0451-sort-characters-by-frequency) |
 | [0560-subarray-sum-equals-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0560-subarray-sum-equals-k) |
+| [0904-fruit-into-baskets](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
@@ -102,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0643-maximum-average-subarray-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0643-maximum-average-subarray-i) |
 | [0713-subarray-product-less-than-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0713-subarray-product-less-than-k) |
+| [0904-fruit-into-baskets](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
