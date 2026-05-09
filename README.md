@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0485-max-consecutive-ones](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0485-max-consecutive-ones) |
+| [0496-next-greater-element-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0560-subarray-sum-equals-k) |
 | [0643-maximum-average-subarray-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0643-maximum-average-subarray-i) |
 | [0704-binary-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0704-binary-search) |
@@ -73,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0451-sort-characters-by-frequency](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0451-sort-characters-by-frequency) |
+| [0496-next-greater-element-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0567-permutation-in-string) |
 | [0904-fruit-into-baskets](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0904-fruit-into-baskets) |
@@ -303,6 +305,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0232-implement-queue-using-stacks) |
+| [0496-next-greater-element-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0739-daily-temperatures) |
 ## Database
 |  |
@@ -329,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0496-next-greater-element-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0739-daily-temperatures) |
 ## Geometry
 |  |
