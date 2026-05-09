@@ -2,22 +2,21 @@ class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
         int n1 = nums1.length;
         int n2 = nums2.length;
-        for(int i=0; i<n1; i++){
-            int temp = nums1[i];
-            for(int j=0; j<n2; j++){
-                if(temp==nums2[j]){
-                    for(int k=j; k<n2; k++){
-                        if(nums2[k]>nums2[j]){
-                            nums1[i] = nums2[k];
-                            break;
-                        }
-                    }
-                }
+        Deque<Integer> st = new ArrayDeque<>();
+        int[] result = new int[n1];
+        HashMap<Integer,Integer> hm = new HashMap<>();
+        for(int i=0; i<n2; i++){
+            while(!st.isEmpty() && st.peek()<nums2[i]){
+                hm.put(st.pop(),nums2[i]);
             }
-            if(temp==nums1[i]){
-                nums1[i] = -1;
-            }
+            st.push(nums2[i]);
         }
-        return nums1;
+        while(!st.isEmpty()){
+            hm.put(st.pop(),-1);
+        }
+        for(int i=0; i<n1; i++){
+            result[i]= hm.get(nums1[i]);
+        }
+        return result;
     }
 }
