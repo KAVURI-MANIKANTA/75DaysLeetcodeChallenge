@@ -8,7 +8,7 @@ class Solution {
 
         Stack<Integer> st = new Stack<>();
 
-        int maxArea = 0;
+        int maxA = 0;
 
         for(int i = 0; i <= n; i++){
 
@@ -31,12 +31,12 @@ class Solution {
 
                 int area = height * width;
 
-                maxArea = Math.max(maxArea, area);
+                maxA = Math.max(maxA, area);
             }
 
             st.push(i);
         }
 
-        return maxArea;
+        return maxA;
     }
 }
