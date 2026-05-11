@@ -154,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0242-valid-anagram) |
 | [0344-reverse-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0344-reverse-string) |
 | [0389-find-the-difference](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0389-find-the-difference) |
+| [0394-decode-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0394-decode-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0451-sort-characters-by-frequency](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0451-sort-characters-by-frequency) |
@@ -307,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0232-implement-queue-using-stacks) |
+| [0394-decode-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0394-decode-string) |
 | [0496-next-greater-element-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0739-daily-temperatures) |
 ## Database
@@ -356,6 +358,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0021-merge-two-sorted-lists](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0021-merge-two-sorted-lists) |
 | [0143-reorder-list](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0206-reverse-linked-list) |
+| [0394-decode-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0394-decode-string) |
 ## Tree
 |  |
 | ------- |
