@@ -3,29 +3,29 @@ class Solution {
         Stack<Integer> ns = new Stack<>();
         Stack<StringBuilder> ss = new Stack<>();
         int num = 0;
-        StringBuilder curr = new StringBuilder();
+        StringBuilder cur = new StringBuilder();
         for(char ch:s.toCharArray()){
             if(Character.isDigit(ch)){
                 num = num*10+(ch-'0');
             }
             else if(ch=='['){
                 ns.push(num);
-                ss.push(curr);
+                ss.push(cur);
                 num = 0;
-                curr = new StringBuilder();
+                cur = new StringBuilder();
             }
             else if(ch==']'){
                 int repeat = ns.pop();
                 StringBuilder prev = ss.pop();
                 for(int i=0; i<repeat; i++){
-                    prev.append(curr);
+                    prev.append(cur);
                 }
-                curr = prev;
+                cur = prev;
             }
             else{
-                curr.append(ch);
+                cur.append(ch);
             }
         }
-        return curr.toString();
+        return cur.toString();
     }
 }
