@@ -12,14 +12,14 @@ class Solution {
     public int minEatingSpeed(int[] piles, int h) {
         int l = 1;
         int r = 1000000000;
-        int mid = 0;
+        int m = 0;
         while(l<=r){
-            mid = l + (r-l)/2;
-            if(midv(piles,mid)>h){
-                l = mid + 1;
+            m = l + (r-l)/2;
+            if(midv(piles,m)>h){
+                l = m + 1;
             }
             else{
-                r = mid - 1;
+                r = m - 1;
             }
         }
         return l;
