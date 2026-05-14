@@ -11,10 +11,7 @@ class Solution {
     }
     public int minEatingSpeed(int[] piles, int h) {
         int l = 1;
-        int r = 0;
-        for(int i=0; i<piles.length; i++){
-            r = Math.max(piles[i],r);
-        }
+        int r = 1000000000;
         int mid = 0;
         while(l<=r){
             mid = l + (r-l)/2;
