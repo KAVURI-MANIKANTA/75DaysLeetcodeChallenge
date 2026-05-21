@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0049-group-anagrams) |
 | [0074-search-a-2d-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0075-sort-colors) |
+| [0079-word-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0084-largest-rectangle-in-histogram) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0128-longest-consecutive-sequence) |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0049-group-anagrams) |
+| [0079-word-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0125-valid-palindrome) |
 | [0208-implement-trie-prefix-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -171,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0100-same-tree) |
@@ -213,6 +216,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0036-valid-sudoku](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0036-valid-sudoku) |
 | [0074-search-a-2d-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0074-search-a-2d-matrix) |
+| [0079-word-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0079-word-search) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0733-flood-fill](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0733-flood-fill) |
 | [1572-matrix-diagonal-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1572-matrix-diagonal-sum) |
@@ -464,4 +468,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0278-first-bad-version](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0278-first-bad-version) |
+## Backtracking
+|  |
+| ------- |
+| [0079-word-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
