@@ -39,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0560-subarray-sum-equals-k) |
+| [0621-task-scheduler](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0621-task-scheduler) |
 | [0643-maximum-average-subarray-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0643-maximum-average-subarray-i) |
 | [0704-binary-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0713-subarray-product-less-than-k) |
@@ -83,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0567-permutation-in-string) |
+| [0621-task-scheduler](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0621-task-scheduler) |
 | [0904-fruit-into-baskets](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0930-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0974-subarray-sums-divisible-by-k) |
@@ -102,6 +104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0389-find-the-difference](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0389-find-the-difference) |
 | [0451-sort-characters-by-frequency](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0451-sort-characters-by-frequency) |
+| [0621-task-scheduler](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0621-task-scheduler) |
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0977-squares-of-a-sorted-array) |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1502-can-make-arithmetic-progression-from-sequence) |
@@ -248,6 +251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0347-top-k-frequent-elements) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0451-sort-characters-by-frequency](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0451-sort-characters-by-frequency) |
+| [0621-task-scheduler](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0621-task-scheduler) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1046-last-stone-weight) |
@@ -263,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0451-sort-characters-by-frequency) |
+| [0621-task-scheduler](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0621-task-scheduler) |
 ## Quickselect
 |  |
 | ------- |
@@ -303,6 +308,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0011-container-with-most-water) |
+| [0621-task-scheduler](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0621-task-scheduler) |
 ## Dynamic Programming
 |  |
 | ------- |
