@@ -3,7 +3,7 @@ class Solution {
         if(i>=grid.length || i<0 || j<0 || j>=grid[0].length){
             return;
         }
-        if(grid[i][j]=='x' || grid[i][j]=='0'){
+        if(grid[i][j]!='1'){
             return;
         }
         grid[i][j] = 'x';
