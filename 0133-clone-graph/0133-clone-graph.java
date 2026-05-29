@@ -19,11 +19,9 @@ class Node {
 */
 
 class Solution {
-    HashMap<Node,Node> hm = new HashMap<>();
+    Map<Node,Node> hm = new HashMap<>();
     public Node cloneGraph(Node node) {
-        if(node==null){
-            return null;
-        }
+        if(node==null) return null;
         if(hm.containsKey(node)){
             return hm.get(node);
         }
