@@ -245,6 +245,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0002-add-two-numbers) |
+| [0070-climbing-stairs](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0172-factorial-trailing-zeroes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0172-factorial-trailing-zeroes) |
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
@@ -327,6 +328,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [1493-longest-subarray-of-1s-after-deleting-one-element](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1493-longest-subarray-of-1s-after-deleting-one-element) |
 ## Bit Manipulation
@@ -508,4 +510,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0703-kth-largest-element-in-a-stream) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
