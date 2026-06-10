@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0035-search-insert-position](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0035-search-insert-position) |
 | [0036-valid-sudoku](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0049-group-anagrams) |
+| [0056-merge-intervals](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0057-insert-interval) |
 | [0074-search-a-2d-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0075-sort-colors) |
@@ -105,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0016-3sum-closest](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0016-3sum-closest) |
 | [0049-group-anagrams](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0049-group-anagrams) |
+| [0056-merge-intervals](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0075-sort-colors) |
 | [0169-majority-element](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0215-kth-largest-element-in-an-array) |
