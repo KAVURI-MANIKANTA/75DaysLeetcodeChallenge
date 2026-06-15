@@ -178,6 +178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0049-group-anagrams) |
+| [0067-add-binary](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0067-add-binary) |
 | [0079-word-search](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0125-valid-palindrome) |
 | [0208-implement-trie-prefix-tree](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0208-implement-trie-prefix-tree) |
@@ -260,6 +261,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0002-add-two-numbers) |
+| [0067-add-binary](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0172-factorial-trailing-zeroes](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0172-factorial-trailing-zeroes) |
@@ -362,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0067-add-binary) |
 | [0136-single-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0191-number-of-1-bits) |
@@ -525,6 +528,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0067-add-binary) |
 | [3477-fruits-into-baskets-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/3477-fruits-into-baskets-ii) |
 ## Ordered Set
 |  |
