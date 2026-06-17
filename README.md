@@ -69,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1572-matrix-diagonal-sum](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1572-matrix-diagonal-sum) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
 | [2133-check-if-every-row-and-column-contains-all-numbers](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2133-check-if-every-row-and-column-contains-all-numbers) |
+| [2280-minimum-lines-to-represent-a-line-chart](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2280-minimum-lines-to-represent-a-line-chart) |
 | [2319-check-if-matrix-is-x-matrix](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2319-check-if-matrix-is-x-matrix) |
 | [3477-fruits-into-baskets-ii](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/3477-fruits-into-baskets-ii) |
 ## Hash Table
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0977-squares-of-a-sorted-array) |
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1502-can-make-arithmetic-progression-from-sequence) |
+| [2280-minimum-lines-to-represent-a-line-chart](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2280-minimum-lines-to-represent-a-line-chart) |
 ## Sliding Window
 |  |
 | ------- |
@@ -271,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
 | [1523-count-odd-numbers-in-an-interval-range](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1523-count-odd-numbers-in-an-interval-range) |
 | [1822-sign-of-the-product-of-an-array](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/1822-sign-of-the-product-of-an-array) |
+| [2280-minimum-lines-to-represent-a-line-chart](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2280-minimum-lines-to-represent-a-line-chart) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -422,6 +425,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0973-k-closest-points-to-origin](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0973-k-closest-points-to-origin) |
+| [2280-minimum-lines-to-represent-a-line-chart](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2280-minimum-lines-to-represent-a-line-chart) |
 ## Linked List
 |  |
 | ------- |
@@ -554,4 +558,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0070-climbing-stairs](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0070-climbing-stairs) |
 | [0509-fibonacci-number](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/0509-fibonacci-number) |
+## Number Theory
+|  |
+| ------- |
+| [2280-minimum-lines-to-represent-a-line-chart](https://github.com/KAVURI-MANIKANTA/75DaysLeetcodeChallenge/tree/master/2280-minimum-lines-to-represent-a-line-chart) |
 <!---LeetCode Topics End-->
